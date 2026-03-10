@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap de Transformación Digital - Grupo León</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+        
+        .moscow-must { background-color: #ef4444; color: white; }
+        .moscow-should { background-color: #f97316; color: white; }
+        .moscow-could { background-color: #3b82f6; color: white; }
+        
+        .timeline-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        .timeline-container::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 4px;
+        }
+        .timeline-container::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        .timeline-container::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="min-h-screen p-6 md:p-12">
+
+    <!-- Header -->
+    <header class="mb-12 max-w-7xl mx-auto">
+        <div class="flex items-center justify-between mb-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-slate-800">Plan de Iniciativas en Grupo León S.A.</h1>
+            <div class="text-right">
+                <p class="text-sm font-semibold text-blue-600">Aliado Tecnológico</p>
+                <p class="text-xs text-slate-500">Hoja de Ruta - Cuentas Corrientes</p>
+            </div>
+        </div>
+        <p class="text-slate-600 max-w-3xl mb-8">
+            Roadmap integral para la transformación digital del sector de <strong>Cuentas Corrientes</strong>, combinando soluciones Quick Wins para descomprimir la operación actual con implementaciones estructurales escalables, priorizando el cuidado de la facturación diaria.
+        </p>
+
+        <!-- Leyenda Priorización -->
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+            <h2 class="text-lg font-semibold mb-4 border-b pb-2">Metodología de Priorización (MoSCoW)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div>
+                    <span class="inline-block px-3 py-1 text-xs font-bold rounded-full moscow-must mb-2">MUST HAVE</span>
+                    <p class="text-sm text-slate-600">Críticas, sin negociación. Fundamentales para descomprimir la operación y asegurar la continuidad.</p>
+                </div>
+                <div>
+                    <span class="inline-block px-3 py-1 text-xs font-bold rounded-full moscow-should mb-2">SHOULD HAVE</span>
+                    <p class="text-sm text-slate-600">Importantes, alta prioridad. Generan gran valor en la automatización y ahorro de tiempo.</p>
+                </div>
+                <div>
+                    <span class="inline-block px-3 py-1 text-xs font-bold rounded-full moscow-could mb-2">COULD HAVE</span>
+                    <p class="text-sm text-slate-600">Deseables. Mejoras a mediano plazo si los recursos y la estabilidad lo permiten.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Roadmap Grid -->
+    <main class="max-w-7xl mx-auto">
+        <div class="timeline-container overflow-x-auto pb-8">
+            <div class="min-w-[800px] grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Columna Fase 1 -->
+                <div class="flex flex-col">
+                    <div class="text-center mb-8 border-b-2 border-slate-200 pb-4 sticky top-0 bg-[#f8fafc] z-10">
+                        <h2 class="text-xl font-bold text-blue-700">FASE 1: "QUICK WINS"</h2>
+                        <p class="text-xs text-slate-500 uppercase tracking-wide mt-1">Impacto Inmediato (Semanas 1-4)</p>
+                    </div>
+
+                    <div class="flex-1 flex flex-col gap-6">
+                        
+                        <!-- Tarjeta 1.1 -->
+                        <div class="bg-white rounded-xl p-5 shadow-sm border-l-4 border-red-500 hover:shadow-md transition-shadow relative">
+                            <span class="absolute -top-3 -left-3 bg-slate-800 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm border-2 border-white">#1</span>
+                            <div class="flex justify-between items-start mb-3 ml-2">
+                                <h3 class="font-bold text-slate-800 text-lg leading-tight">Extirpación del Archivo Físico</h3>
+                                <span class="px-2 py-1 text-[10px] font-bold rounded-md moscow-must shrink-0 ml-2">MUST HAVE</span>
+                            </div>
+                            <div class="space-y-3 text-sm text-slate-600 ml-2">
+                                <p><strong>Objetivo:</strong> Prohibir ingreso de boletas físicas a CC. Reasignar archivo a Ventas/Expedición.</p>
+                                <p><strong>Prioridad:</strong> Resuelve "Archivística Improvisada". Evita que Marilin interrumpa cobros para buscar papeles.</p>
+                                <p class="text-slate-800 bg-slate-50 p-2 rounded italic"><strong>Resultado:</strong> Liberación inmediata de horas-hombre. Riesgo sistémico cero.</p>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 1.2 -->
+                        <div class="bg-white rounded-xl p-5 shadow-sm border-l-4 border-red-500 hover:shadow-md transition-shadow relative">
+                            <span class="absolute -top-3 -left-3 bg-slate-800 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm border-2 border-white">#2</span>
+                            <div class="flex justify-between items-start mb-3 ml-2">
+                                <h3 class="font-bold text-slate-800 text-lg leading-tight">Migración a Google Sheets (Planilla Maestro)</h3>
+                                <span class="px-2 py-1 text-[10px] font-bold rounded-md moscow-must shrink-0 ml-2">MUST HAVE</span>
+                            </div>
+                            <div class="space-y-3 text-sm text-slate-600 ml-2">
+                                <p><strong>Objetivo:</strong> Unificar planillas locales en una matriz estructurada en la nube.</p>
+                                <p><strong>Prioridad:</strong> Elimina "Fricción Inter-áreas" y "Tensión de Caja". Termina con los bloqueos de archivo de "solo lectura".</p>
+                                <p class="text-slate-800 bg-slate-50 p-2 rounded italic"><strong>Resultado:</strong> Trabajo colaborativo en tiempo real entre Tesorería y CC.</p>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 1.3 -->
+                        <div class="bg-white rounded-xl p-5 shadow-sm border-l-4 border-red-500 hover:shadow-md transition-shadow relative">
+                            <span class="absolute -top-3 -left-3 bg-slate-800 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm border-2 border-white">#3</span>
+                            <div class="flex justify-between items-start mb-3 ml-2">
+                                <h3 class="font-bold text-slate-800 text-lg leading-tight">Disaster Recovery (Backup Cloud)</h3>
+                                <span class="px-2 py-1 text-[10px] font-bold rounded-md moscow-must shrink-0 ml-2">MUST HAVE</span>
+                            </div>
+                            <div class="space-y-3 text-sm text-slate-600 ml-2">
+                                <p><strong>Objetivo:</strong> Automatizar copias de seguridad de GesCom a la nube diariamente.</p>
+                                <p><strong>Prioridad:</strong> Mitiga el "Trauma de Datos". Elimina la práctica riesgosa del backup físico en pendrives.</p>
+                                <p class="text-slate-800 bg-slate-50 p-2 rounded italic"><strong>Resultado:</strong> Seguridad de datos garantizada. Proceso silencioso nocturno.</p>
+                            </div>
+                        </div>
+
+                         <!-- Tarjeta 1.4 -->
+                         <div class="bg-white rounded-xl p-5 shadow-sm border-l-4 border-orange-500 hover:shadow-md transition-shadow relative">
+                            <span class="absolute -top-3 -left-3 bg-slate-800 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm border-2 border-white">#4</span>
+                            <div class="flex justify-between items-start mb-3 ml-2">
+                                <h3 class="font-bold text-slate-800 text-lg leading-tight">Estandarización B2B (Fin de "Secretaría")</h3>
+                                <span class="px-2 py-1 text-[10px] font-bold rounded-md moscow-should shrink-0 ml-2">SHOULD HAVE</span>
+                            </div>
+                            <div class="space-y-3 text-sm text-slate-600 ml-2">
+                                <p><strong>Objetivo:</strong> Horarios de corte y respuestas automáticas en WhatsApp Business.</p>
+                                <p><strong>Prioridad:</strong> Ataca la "Secretaría Manual". Frena el uso de CC como mesa de consulta de saldos 1 a 1.</p>
+                                <p class="text-slate-800 bg-slate-50 p-2 rounded italic"><strong>Resultado:</strong> Envíos masivos de extractos. Recuperación de tiempo operativo.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Columna Fase 2 -->
+                <div class="flex flex-col">
+                    <div class="text-center mb-8 border-b-2 border-slate-200 pb-4 sticky top-0 bg-[#f8fafc] z-10">
+                        <h2 class="text-xl font-bold text-slate-700">FASE 2: ESTRUCTURALES</h2>
+                        <p class="text-xs text-slate-500 uppercase tracking-wide mt-1">Automatización Compleja (Meses 2-6)</p>
+                    </div>
+
+                    <div class="flex-1 flex flex-col gap-6">
+                        
+                         <!-- Tarjeta 2.1 -->
+                         <div class="bg-white rounded-xl p-5 shadow-sm border-l-4 border-red-500 hover:shadow-md transition-shadow relative">
+                            <span class="absolute -top-3 -left-3 bg-slate-800 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm border-2 border-white">#5</span>
+                            <div class="flex justify-between items-start mb-3 ml-2">
+                                <h3 class="font-bold text-slate-800 text-lg leading-tight">Automatización Cálculo de Intereses ("Puchitos")</h3>
+                                <span class="px-2 py-1 text-[10px] font-bold rounded-md moscow-must shrink-0 ml-2">MUST HAVE</span>
+                            </div>
+                            <div class="space-y-3 text-sm text-slate-600 ml-2">
+                                <p><strong>Objetivo:</strong> Script externo (Middle-ware) para calcular días de atraso y aplicar tasas (5%/10%).</p>
+                                <p><strong>Prioridad:</strong> Soluciona el "100% Cálculo Manual" y la "Depuración Artesanal" a fin de mes.</p>
+                                <p class="text-slate-800 bg-slate-50 p-2 rounded italic"><strong>Resultado:</strong> Entrega preliquidaciones listas, protegiendo el core de GesCom.</p>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 2.2 -->
+                        <div class="bg-white rounded-xl p-5 shadow-sm border-l-4 border-red-500 hover:shadow-md transition-shadow relative">
+                            <span class="absolute -top-3 -left-3 bg-slate-800 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm border-2 border-white">#6</span>
+                            <div class="flex justify-between items-start mb-3 ml-2">
+                                <h3 class="font-bold text-slate-800 text-lg leading-tight">Bloqueos Sistémicos a Morosos (Hard Stops)</h3>
+                                <span class="px-2 py-1 text-[10px] font-bold rounded-md moscow-must shrink-0 ml-2">MUST HAVE</span>
+                            </div>
+                            <div class="space-y-3 text-sm text-slate-600 ml-2">
+                                <p><strong>Objetivo:</strong> Configuración en GesCom para desactivar botón "Facturar" si hay deuda vencida.</p>
+                                <p><strong>Prioridad:</strong> Frena la "Venta a Ciegas". Evita que vendedores generen "factura sobre factura".</p>
+                                <p class="text-slate-800 bg-slate-50 p-2 rounded italic"><strong>Resultado:</strong> Control duro integrado al ERP (requiere intervención del proveedor).</p>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 2.3 -->
+                        <div class="bg-white rounded-xl p-5 shadow-sm border-l-4 border-orange-500 hover:shadow-md transition-shadow relative">
+                            <span class="absolute -top-3 -left-3 bg-slate-800 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm border-2 border-white">#7</span>
+                            <div class="flex justify-between items-start mb-3 ml-2">
+                                <h3 class="font-bold text-slate-800 text-lg leading-tight">"Salderas" Automáticas (Avisos de Vencimiento)</h3>
+                                <span class="px-2 py-1 text-[10px] font-bold rounded-md moscow-should shrink-0 ml-2">SHOULD HAVE</span>
+                            </div>
+                            <div class="space-y-3 text-sm text-slate-600 ml-2">
+                                <p><strong>Objetivo:</strong> Bot de lectura nocturna para envíos programados: "Vence mañana", "Venció ayer".</p>
+                                <p><strong>Prioridad:</strong> Vital para sostener el nuevo esquema comercial a 15 días sin colapsar a CC.</p>
+                                <p class="text-slate-800 bg-slate-50 p-2 rounded italic"><strong>Resultado:</strong> Cobranza proactiva. Conexión Read-Only (no frena el servidor de día).</p>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 2.4 -->
+                        <div class="bg-white rounded-xl p-5 shadow-sm border-l-4 border-blue-500 hover:shadow-md transition-shadow relative">
+                            <span class="absolute -top-3 -left-3 bg-slate-800 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm border-2 border-white">#8</span>
+                            <div class="flex justify-between items-start mb-3 ml-2">
+                                <h3 class="font-bold text-slate-800 text-lg leading-tight">AppSheet para Registro de Caja</h3>
+                                <span class="px-2 py-1 text-[10px] font-bold rounded-md moscow-could shrink-0 ml-2">COULD HAVE</span>
+                            </div>
+                            <div class="space-y-3 text-sm text-slate-600 ml-2">
+                                <p><strong>Objetivo:</strong> App móvil simple para asentar ingresos rápidos físicos en el mostrador.</p>
+                                <p><strong>Prioridad:</strong> Reduce faltantes u olvidos de registro durante el conteo de efectivo.</p>
+                                <p class="text-slate-800 bg-slate-50 p-2 rounded italic"><strong>Resultado:</strong> Validador paralelo alimentando la Planilla Maestro.</p>
+                            </div>
+                        </div>
+
+                         <!-- Tarjeta 2.5 -->
+                         <div class="bg-white rounded-xl p-5 shadow-sm border-l-4 border-blue-500 hover:shadow-md transition-shadow relative">
+                            <span class="absolute -top-3 -left-3 bg-slate-800 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm border-2 border-white">#9</span>
+                            <div class="flex justify-between items-start mb-3 ml-2">
+                                <h3 class="font-bold text-slate-800 text-lg leading-tight">Portal Web B2B de Autogestión</h3>
+                                <span class="px-2 py-1 text-[10px] font-bold rounded-md moscow-could shrink-0 ml-2">COULD HAVE</span>
+                            </div>
+                            <div class="space-y-3 text-sm text-slate-600 ml-2">
+                                <p><strong>Objetivo:</strong> Sitio de logueo para clientes para ver estado de cuenta e intereses.</p>
+                                <p><strong>Prioridad:</strong> Solución final a la "Secretaría", devolviendo responsabilidad al cliente.</p>
+                                <p class="text-slate-800 bg-slate-50 p-2 rounded italic"><strong>Resultado:</strong> Sincronización en la nube. Aislado del tráfico local de GesCom.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- Tarjeta de Descarte -->
+        <div class="mt-8 bg-slate-100 border border-slate-300 rounded-xl p-6 opacity-75 grayscale hover:grayscale-0 transition-all">
+            <h3 class="font-bold text-slate-700 text-lg mb-2 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                </svg>
+                Iniciativas Descartadas (Won't Have)
+            </h3>
+            <p class="text-sm text-slate-600">
+                <strong>Integración Bidireccional Total ERP-Nube:</strong> Intentar que Google Sheets o apps externas escriban directamente y en tiempo real dentro de la base de datos de GesCom. Un error podría corromper la facturación y frenar la operación diaria. Es un riesgo inaceptable en esta etapa de estabilización.
+            </p>
+        </div>
+
+    </main>
+
+</body>
+</html>
